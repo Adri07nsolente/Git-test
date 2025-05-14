@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World !</title>
+</head>
+<body>
+    
+<h1>Comprendre les commandes Git</h1>
+
+<h2>1. git init → Initialiser Git </h2>
+
+    <p> Tu dis à Git : "Surveille ce dossier" Résultat : un dossier caché .git est créé → Git commence à suivre les fichiers.
+        Git init
+    </p>
+
+<h2>2. (optionnel) Créer une branche nommée main</h2>
+<p> C’est ta "ligne principale" de travail/ git branch -M main
+
+<h2>3. git remote add origin → Relier à GitHub</h2>
+<p> Tu dis à Git où envoyer ton code /git remote add origin https://github.com/TON-PROFIL/TON-DEPOT.git
+    origin veut dire: dépot de github
+</p>
+
+<h2>4. git add . → Préparer les fichiers</h2>
+<p>Tu dis : "je veux inclure ces fichiers dans la prochaine sauvegarde"/ git add .
+    .  = tous les fichiers modifiés ou nouveaux.
+
+</p>
+
+<h2>5. git commit -m "message" → Sauvegarder localement</h2>
+
+<p>Tu fais une capture de ton projet, avec un commentaire
+    git commit -m "Ajout de la page d’accueil"
+    Ce commit est enregistré uniquement sur ton ordinateur pour l’instant.
+</p>
+
+<h2> 6. git push -u origin main → Envoyer sur GitHub</h2>
+<p>Tu dis : "envoie ce commit sur la branche main de mon GitHub"/ git push -u origin main
+     Maintenant ton site/code est en ligne sur GitHub.
+</p>
+
+<p># 1. Initialise le dossier
+git init <br>
+
+# 2. Crée la branche principale
+git branch -M main
+<br>
+# 3. Relie à ton dépôt GitHub
+git remote add origin https://github.com/TON-PROFIL/TON-DEPOT.git
+<br>
+# 4. Ajoute tous les fichiers
+git add .
+<br>
+# 5. Fais un premier commit
+git commit -m "Premier commit"
+<br>
+# 6. Envoie tout sur GitHub
+git push -u origin main
+<br>
+</p>
+<p>A chaque modification <br>
+
+git add .
+git commit -m "Description de ce que tu as changé"
+git push</p>
+</body>
+</html>
